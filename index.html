@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fliperama do Waltão</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="crt">
+    <h1>Fliperama do Waltão</h1>
+
+    <div class="contentContainer">
+      <div class="menuContainer">
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('Breakout')"
+        >
+          Breakout
+        </button>
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('Corona Invaders')"
+        >
+          Corona Invaders
+        </button>
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('Snake')"
+        >
+          Snake
+        </button>
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('TicTacToe')"
+        >
+          Tic-tac-toe
+        </button>
+
+        <button class="button-54" role="button" onclick="openRanking()">
+          Ranking
+        </button>
+      </div>
+
+      <div class="gameContainer">
+        <h2 id="gameTitle">Breakout</h2>
+        <canvas id="gameCanvas"> </canvas>
+      </div>
+    </div>
+
+    <div class="introContainer">
+      Para começar, insira o seu nome
+
+      <input id="nameInput" type="text" />
+      <span id="please">Por favor, insira um nome</span>
+      <button class="button-54" role="button" onclick="startFliperama()">
+        Confirmar
+      </button>
+    </div>
+
+    <div class="rankingContainer">
+      <div class="rankingBotoes">
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('Breakout')"
+        >
+          Breakout
+        </button>
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('Corona Invaders')"
+        >
+          Corona Invaders
+        </button>
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('Snake')"
+        >
+          Snake
+        </button>
+        <button
+          class="button-54"
+          role="button"
+          onclick="handleChangeGame('TicTacToe')"
+        >
+          Tic-tac-toe
+        </button>
+      </div>
+
+      <div class="rankLoading">Carregando...</div>
+
+      <div class="listOfRanking">
+        <h2>Breakout</h2>
+        <ul id="breakoutRank"></ul>
+
+        <h2>Corona Invaders</h2>
+        <ul id="coronaRank"></ul>
+        <h2>Snake</h2>
+        <ul id="snakeRank"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
