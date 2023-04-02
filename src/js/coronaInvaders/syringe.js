@@ -1,4 +1,4 @@
-import { constants } from '../constants';
+import { constants } from '../engine/constants';
 import heartSpritePNG from '../../img/heart.png';
 import syringeSpritePNG from '../../img/syringe.png';
 

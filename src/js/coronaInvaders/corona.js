@@ -1,5 +1,5 @@
 import coronaSpritePNG from '../../img/corona.png';
-import { randomBetween } from '../utils';
+import { randomBetween } from '../engine/utils';
 
 export class Corona {
   constructor({ gameScreen, timer, bullets, setGameState, addScore }) {

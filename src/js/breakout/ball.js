@@ -1,5 +1,5 @@
-import { constants } from '../constants';
-import { randomBoolean } from '../utils';
+import { constants } from '../engine/constants';
+import { randomBoolean } from '../engine/utils';
 
 export class Ball {
   constructor({ gameScreen, inputs, timer, paddle, bricks, setGameState, addScore }) {

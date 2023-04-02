@@ -1,4 +1,4 @@
-import { constants } from '../constants';
+import { constants } from '../engine/constants';
 
 export class Bricks {
   constructor({ gameScreen, inputs }) {

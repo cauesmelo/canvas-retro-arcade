@@ -1,8 +1,8 @@
 import { Timer } from './timer';
 import { Inputs } from './inputs';
-import { Breakout } from './breakout';
+import { Breakout } from '../breakout';
 import { GameScreen } from './gameScreen';
-import { CoronaInvaders } from './coronaInvaders';
+import { CoronaInvaders } from '../coronaInvaders';
 
 export class Engine {
   constructor({ canvas, title }) {
