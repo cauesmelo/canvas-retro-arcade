@@ -38,3 +38,10 @@ yarn start
 - Minify bundle size
 - Create super class game to do boilerplate logic
 - Check collision before draw
+- Flag to display FPS
+- Enable full screen
+- Replace "X" and "O" pngs with native drawing methods
+- Make TicTacToe IA enable human to win sometimes
+- Better writing methods
+- Write function to receive object
+- Hitbox Breakout

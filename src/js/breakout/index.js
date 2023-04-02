@@ -128,8 +128,6 @@ export class BreakoutGame {
       case 'WIN':
         this.handleWin();
         break;
-      default:
-        break;
     }
 
     this.draw();

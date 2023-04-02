@@ -16,6 +16,19 @@ export class Inputs {
     canvas.addEventListener('click', this.clickHandler.bind(this), false);
   }
 
+  clear() {
+    this.rightPressed = false;
+    this.leftPressed = false;
+    this.upPressed = false;
+    this.downPressed = false;
+    this.spacePressed = false;
+    this.mouseClick = {
+      x: 0,
+      y: 0,
+      toBeHandled: false,
+    };
+  }
+
   keyDownHandler(e) {
     switch (e.key) {
       case 'ArrowRight':
@@ -36,8 +49,6 @@ export class Inputs {
         break;
       case ' ':
         this.spacePressed = true;
-        break;
-      default:
         break;
     }
   }
@@ -63,15 +74,13 @@ export class Inputs {
       case ' ':
         this.spacePressed = false;
         break;
-      default:
-        break;
     }
   }
 
   clickHandler(e) {
     this.mouseClick = {
-      x: e.layerX,
-      y: e.layerY,
+      x: e.layerX - e.target.offsetLeft,
+      y: e.layerY - e.target.offsetTop,
       toBeHandled: true,
     };
   }

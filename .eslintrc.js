@@ -12,5 +12,7 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 0,
     'no-param-reassign': 0,
+    'default-case': 0,
+    'consistent-return': 0,
   },
 };

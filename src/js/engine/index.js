@@ -1,9 +1,10 @@
 import { Timer } from './timer';
 import { Inputs } from './inputs';
-import { BreakoutGame } from '../breakout';
-import { GameScreen } from './gameScreen';
-import { CoronaInvadersGame } from '../coronaInvaders';
 import { SnakeGame } from '../snake';
+import { GameScreen } from './gameScreen';
+import { BreakoutGame } from '../breakout';
+import { TicTacToeGame } from '../tictactoe';
+import { CoronaInvadersGame } from '../coronaInvaders';
 
 export class Engine {
   constructor({ canvas, title }) {
@@ -28,6 +29,8 @@ export class Engine {
   }
 
   changeGame(game) {
+    this.inputs.clear();
+
     switch (game) {
       case 'Breakout':
         this.game = new BreakoutGame(this.props);
@@ -40,7 +43,9 @@ export class Engine {
       case 'Snake':
         this.game = new SnakeGame(this.props);
         break;
-      default:
+
+      case 'TicTacToe':
+        this.game = new TicTacToeGame(this.props);
         break;
     }
 

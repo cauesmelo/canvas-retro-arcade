@@ -144,8 +144,6 @@ export class CoronaInvadersGame {
       case 'WIN':
         this.handleWin();
         break;
-      default:
-        break;
     }
 
     this.draw();

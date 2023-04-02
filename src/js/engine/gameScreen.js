@@ -15,9 +15,18 @@ export class GameScreen {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
-  write(text, x, y, size) {
+  write(text, x, y, size, fillBg) {
     if (size) {
       this.ctx.font = constants.fontWithSize(size);
+    }
+
+    if (fillBg) {
+      const fontSize = size ?? constants.defaultFontSize;
+      const bgWidth = fontSize * text.length + fontSize;
+      const bgHeight = fontSize * 2;
+      this.ctx.fillStyle = constants.backgroundColor;
+      this.ctx.fillRect(x - bgWidth / 2, y - bgHeight / 2 - fontSize / 2, bgWidth, bgHeight);
+      this.ctx.fillStyle = constants.primaryColor;
     }
 
     this.ctx.fillText(text, x, y);

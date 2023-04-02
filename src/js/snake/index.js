@@ -122,8 +122,6 @@ export class SnakeGame {
       case 'LOSE':
         this.handleLose();
         break;
-      default:
-        break;
     }
 
     this.draw();
