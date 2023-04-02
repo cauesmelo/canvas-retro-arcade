@@ -1,0 +1,96 @@
+body {
+  background: #a7edfa; /* fallback for old browsers*/
+  background: -webkit-linear-gradient(top, #a7edfa 0%, #8ce6ee 25%, #f0c5df 75%, #c86d95 100%);
+  background: -moz-linear-gradient(top, #a7edfa 0%, #8ce6ee 25%, #f0c5df 75%, #c86d95 100%);
+  background: linear-gradient(to bottom, #a7edfa 0%, #8ce6ee 25%, #f0c5df 75%, #c86d95 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Press Start 2P', cursive;
+  cursor: url('http://www.rw-designer.com/cursor-extern.php?id=52844'), auto;
+  margin: 0;
+}
+
+body::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 100%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.5));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+button {
+  z-index: 3;
+  letter-spacing: 1px;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.5em 1.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+canvas {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  letter-spacing: 0.1rem;
+  color: #811041;
+  position: relative;
+  margin: 0;
+}
+
+h1::before {
+  content: 'Canvas Retro Games';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  z-index: 3;
+  color: #e6698e;
+}
+
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 0;
+}
