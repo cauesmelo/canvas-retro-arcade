@@ -3,7 +3,7 @@
   <img src="https://user-images.githubusercontent.com/19245891/229381485-9b52051f-3cba-4d4b-a34f-96d5e97a99a7.png" alt="Project logo"/>
 </p>
 
-Basically a (very) small collection os retro arcades mad with HTML Canvas and Javascript, not too much to say about it.
+Basically a (very) small collection of retro arcades made with HTML Canvas and JavaScript, not too much to say about it.
 
 # Quickstart
 
@@ -76,12 +76,12 @@ make deploy
 
 ## To do list
 
-- Isolate draw functions into gameScreen class.
+- Isolate draw methods into gameScreen class.
 - Minify bundle size.
 - Create flag to display FPS.
 - Enable full screen mode.
 - In TicTacToe, replace "X" and "O" sprites to native drawing methods.
 - In TicTacToe, force AI to make mistakes so that the human can win sometimes.
 - Create more powerful writing methods in `gameScreen`.
-- Rework breakout hitbox.
+- Rework Breakout hitbox.
 - Add delay after death on Corona Invaders.
