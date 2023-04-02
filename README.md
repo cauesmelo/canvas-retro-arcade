@@ -1,48 +1,84 @@
-# Canvas retro games
+![Repository logo](https://storage.googleapis.com/canvas-retro-games/project/logo.png)
+Basically a (very) small collection os retro arcades mad with HTML Canvas and Javascript, not too much to say about it.
 
-Basically a retro arcade made with pure HTML canvas and JavaScript. Not too much to say about it. :)
+# Quickstart
 
-## Quickstart
+You can access [this link](https://storage.googleapis.com/canvas-retro-games/index.html) or clone the repository to run locally.
 
 1. Clone to project
+
+```bash
+git clone https://github.com/cauesmelo/canvas-retro-arcade
+```
+
+2. Open the project
+
+```bash
+cd canvas-retro-arcade
+```
+
+3. Run in development mode
+
+```bash
+make dev
+```
+
+You can see all the available commands [here](#commands).
+
+## Game screens
+
+# Commands
+
+### Clone the project
 
 ```bash
 git clone https://github.com/cauesmelo/canvas-retro-games
 ```
 
-2. Open the project and install the packages
+### Running locally
 
 ```bash
-cd canvas-retro-games && yarn
+# Run as development
+make dev
 ```
 
-3. Start the project
+### Linting and formating
 
 ```bash
-yarn start
+# Run all linters
+make lint
+
+# Format all files
+make format
+
+# Run all linters and format all files
+make tidy
 ```
 
-## Game screens
+### Build
 
-## Run as development
+```bash
+# Generate build
+make build
+```
 
-## Build
+### Deploying
 
-## Deploy
+You can deploy the project to a Google Cloud Bucket(link). For this, you need to have gloud CLI(https://cloud.google.com/sdk/docs/install?hl=en) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized at root folder. After everything set you can deploy with the command bellow.
 
-## Linting and formating
+```bash
+# Deploy to Google Cloud Bucket configured on Makefile
+make deploy
+```
 
 ## To do list
 
 - Isolate draw functions into gameScreen class.
-- Minify bundle size
-- Create super class game to do boilerplate logic
-- Check collision before draw
-- Flag to display FPS
-- Enable full screen
-- Replace "X" and "O" pngs with native drawing methods
-- Make TicTacToe IA enable human to win sometimes
-- Better writing methods
-- Write function to receive object
-- Hitbox Breakout
-- Add delay after death on corona invaders
+- Minify bundle size.
+- Create flag to display FPS.
+- Enable full screen mode.
+- In TicTacToe, replace "X" and "O" sprites to native drawing methods.
+- In TicTacToe, force AI to make mistakes so that the human can win sometimes.
+- Create more powerful writing methods in `gameScreen`.
+- Rework breakout hitbox.
+- Add delay after death on Corona Invaders.
