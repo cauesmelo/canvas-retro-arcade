@@ -1,11 +1,15 @@
-![Repository logo](https://storage.googleapis.com/canvas-retro-games/project/logo.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19245891/229381485-9b52051f-3cba-4d4b-a34f-96d5e97a99a7.png" alt="Project logo"/>
+</p>
+
 Basically a (very) small collection os retro arcades mad with HTML Canvas and Javascript, not too much to say about it.
 
 # Quickstart
 
 You can access [this link](https://storage.googleapis.com/canvas-retro-games/index.html) or clone the repository to run locally.
 
-1. Clone to project
+1. Clone the project
 
 ```bash
 git clone https://github.com/cauesmelo/canvas-retro-arcade
@@ -25,15 +29,14 @@ make dev
 
 You can see all the available commands [here](#commands).
 
-## Game screens
+# Game screens
+![breakout-small](https://user-images.githubusercontent.com/19245891/229381547-38f69c6d-9358-4297-ac0d-475f2697c7bc.png)
+![corona-small](https://user-images.githubusercontent.com/19245891/229381550-dc4b28b0-0a47-473c-b2be-760567f255a1.png)
+![snake-small](https://user-images.githubusercontent.com/19245891/229381551-51dc6c51-2ae4-4c79-a394-04edba430213.png)
+![tictactoe-small](https://user-images.githubusercontent.com/19245891/229381552-fd6920a6-c034-4264-afe4-1c38271ca4d1.png)
+
 
 # Commands
-
-### Clone the project
-
-```bash
-git clone https://github.com/cauesmelo/canvas-retro-games
-```
 
 ### Running locally
 
@@ -64,7 +67,7 @@ make build
 
 ### Deploying
 
-You can deploy the project to a Google Cloud Bucket(link). For this, you need to have gloud CLI(https://cloud.google.com/sdk/docs/install?hl=en) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized at root folder. After everything set you can deploy with the command bellow.
+You can deploy the project to a ([Google Cloud Bucket](https://cloud.google.com/storage/docs/creating-buckets)). For this, you need to have the [gcloud CLI](https://cloud.google.com/sdk/docs/install) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized at root folder. After everything set you can deploy with the command bellow.
 
 ```bash
 # Deploy to Google Cloud Bucket configured on Makefile
