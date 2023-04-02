@@ -5,7 +5,7 @@
 
 Basically a (very) small collection of retro arcades made with HTML Canvas and JavaScript, not too much to say about it.
 
-# Quickstart
+# :zap: Quickstart
 
 You can access [this link](https://storage.googleapis.com/canvas-retro-games/index.html) or clone the repository to run locally.
 
@@ -27,16 +27,16 @@ cd canvas-retro-arcade
 make dev
 ```
 
-You can see all the available commands [here](#commands).
+You can see all the available commands [here](#book-commands).
 
-# Game screens
+# :video_game: Game screens
 ![breakout-small](https://user-images.githubusercontent.com/19245891/229381547-38f69c6d-9358-4297-ac0d-475f2697c7bc.png)
 ![corona-small](https://user-images.githubusercontent.com/19245891/229381550-dc4b28b0-0a47-473c-b2be-760567f255a1.png)
 ![snake-small](https://user-images.githubusercontent.com/19245891/229381551-51dc6c51-2ae4-4c79-a394-04edba430213.png)
 ![tictactoe-small](https://user-images.githubusercontent.com/19245891/229381552-fd6920a6-c034-4264-afe4-1c38271ca4d1.png)
 
 
-# Commands
+# :book: Commands
 
 ### Running locally
 
@@ -74,7 +74,7 @@ You can deploy the project to a ([Google Cloud Bucket](https://cloud.google.com/
 make deploy
 ```
 
-## To do list
+# :warning: To do
 
 - Isolate draw methods into gameScreen class.
 - Minify bundle size.
