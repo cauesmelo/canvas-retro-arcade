@@ -16,16 +16,47 @@
       <h1>Canvas Retro Games</h1>
 
       <menu>
-        <button role="button" onclick="changeGame('Breakout')">Breakout</button>
-        <button role="button" onclick="changeGame('Corona Invaders')">Corona Invaders</button>
-        <button role="button" onclick="changeGame('Snake')">Snake</button>
-        <button role="button" onclick="changeGame('TicTacToe')">Tic-tac-toe</button>
+        <button
+          role="button"
+          onmousedown="changeGame('Breakout')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Breakout
+        </button>
+
+        <button
+          role="button"
+          onmousedown="changeGame('Corona Invaders')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Corona Invaders
+        </button>
+
+        <button
+          role="button"
+          onmousedown="changeGame('Snake')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Snake
+        </button>
+
+        <button
+          role="button"
+          onmousedown="changeGame('TicTacToe')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Tic-tac-toe
+        </button>
       </menu>
 
       <section>
         <h2>Breakout</h2>
         <canvas> </canvas>
       </section>
-    </div>
+    </main>
   </body>
 </html>

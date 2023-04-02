@@ -45,3 +45,4 @@ yarn start
 - Better writing methods
 - Write function to receive object
 - Hitbox Breakout
+- Add delay after death on corona invaders
