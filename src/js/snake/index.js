@@ -87,6 +87,7 @@ export class SnakeGame {
 
     if (this.inputs.spacePressed) {
       this.setGameState('PLAY');
+      this.inputs.spacePressed = false;
     }
   }
 
@@ -116,9 +117,11 @@ export class SnakeGame {
       case 'WAIT':
         this.handleWait();
         break;
+
       case 'PLAY':
         this.handlePlay();
         break;
+
       case 'LOSE':
         this.handleLose();
         break;

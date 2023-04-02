@@ -35,18 +35,22 @@ export class Inputs {
       case 'Right':
         this.rightPressed = true;
         break;
+
       case 'Left':
       case 'ArrowLeft':
         this.leftPressed = true;
         break;
+
       case 'Up':
       case 'ArrowUp':
         this.upPressed = true;
         break;
+
       case 'Down':
       case 'ArrowDown':
         this.downPressed = true;
         break;
+
       case ' ':
         this.spacePressed = true;
         break;
@@ -59,18 +63,22 @@ export class Inputs {
       case 'ArrowRight':
         this.rightPressed = false;
         break;
+
       case 'Left':
       case 'ArrowLeft':
         this.leftPressed = false;
         break;
+
       case 'Up':
       case 'ArrowUp':
         this.upPressed = false;
         break;
+
       case 'Down':
       case 'ArrowDown':
         this.downPressed = false;
         break;
+
       case ' ':
         this.spacePressed = false;
         break;

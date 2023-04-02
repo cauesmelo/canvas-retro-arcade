@@ -135,12 +135,15 @@ export class CoronaInvadersGame {
       case 'WAIT':
         this.handleWait();
         break;
+
       case 'PLAY':
         this.handlePlay();
         break;
+
       case 'LOSE':
         this.handleLose();
         break;
+
       case 'WIN':
         this.handleWin();
         break;
