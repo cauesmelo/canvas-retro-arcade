@@ -2,7 +2,7 @@ import { Corona } from './corona';
 import { Syringe } from './syringe';
 import { Bullets } from './bullets';
 
-export class CoronaInvaders {
+export class CoronaInvadersGame {
   constructor({ gameScreen, inputs, timer }) {
     this.gameScreen = gameScreen;
     this.inputs = inputs;

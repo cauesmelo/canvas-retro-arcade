@@ -2,7 +2,7 @@ import { Ball } from './ball';
 import { Paddle } from './paddle';
 import { Bricks } from './bricks';
 
-export class Breakout {
+export class BreakoutGame {
   constructor({ gameScreen, inputs, timer }) {
     this.gameScreen = gameScreen;
     this.inputs = inputs;

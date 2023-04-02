@@ -20,10 +20,10 @@ export class Paddle {
   }
 
   moveLeft() {
-    if (this.x > 0) this.x -= 5 * this.timer.delta;
+    if (this.x > 0) this.x -= 2 * this.timer.delta;
   }
 
   moveRight() {
-    if (this.x < constants.windowWidth - this.width) this.x += 5 * this.timer.delta;
+    if (this.x < constants.windowWidth - this.width) this.x += 2 * this.timer.delta;
   }
 }

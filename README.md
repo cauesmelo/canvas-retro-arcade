@@ -31,3 +31,10 @@ yarn start
 ## Deploy
 
 ## Linting and formating
+
+## To do list
+
+- Isolate draw functions into gameScreen class.
+- Minify bundle size
+- Create super class game to do boilerplate logic
+- Check collision before draw
