@@ -1,7 +1,7 @@
 import { Timer } from './timer';
 import { Inputs } from './inputs';
 import { Breakout } from './breakout';
-import { GameScreen } from './screen';
+import { GameScreen } from './gameScreen';
 
 export class Engine {
   constructor({ canvas }) {
