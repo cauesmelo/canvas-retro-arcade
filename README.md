@@ -67,7 +67,7 @@ make build
 
 ### Deploying
 
-You can deploy the project to a ([Google Cloud Bucket](https://cloud.google.com/storage/docs/creating-buckets)). For this, you need to have the [gcloud CLI](https://cloud.google.com/sdk/docs/install) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized at root folder. After everything set you can deploy with the command bellow.
+You can deploy the project to a [Google Cloud Bucket](https://cloud.google.com/storage/docs/creating-buckets). For this, you need to have the [gcloud CLI](https://cloud.google.com/sdk/docs/install) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized at root folder. After everything set you can deploy with the command bellow.
 
 ```bash
 # Deploy to Google Cloud Bucket configured on Makefile
