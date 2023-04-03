@@ -3,11 +3,11 @@
   <img src="https://user-images.githubusercontent.com/19245891/229381485-9b52051f-3cba-4d4b-a34f-96d5e97a99a7.png" alt="Project logo"/>
 </p>
 
-Basically a (very) small collection of retro arcades made with HTML Canvas and JavaScript, not too much to say about it.
+Basically a (very) small collection of retro arcades made with HTML Canvas and JavaScript without external libraries, not too much to say about it.
 
 # :zap: Quickstart
 
-You can access [this link](https://storage.googleapis.com/canvas-retro-games/index.html) or clone the repository to run locally.
+You can access [this link](https://storage.googleapis.com/canvas-retro-games/index.html) or clone this repository to run locally.
 
 1. Clone the project
 
@@ -67,7 +67,7 @@ make build
 
 ### Deploying
 
-You can deploy the project to a [Google Cloud Bucket](https://cloud.google.com/storage/docs/creating-buckets). For this, you need to have the [gcloud CLI](https://cloud.google.com/sdk/docs/install) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized at root folder. After everything set you can deploy with the command bellow.
+You can deploy the project to a [Google Cloud Bucket](https://cloud.google.com/storage/docs/creating-buckets). For this, you need to have the [gcloud CLI](https://cloud.google.com/sdk/docs/install) with proper authentication set. You also need to configure the `GCP_BUCKET` and `GCP_PROJECT` variables at `Makefile` localized in the root folder. After everything set you can deploy with the command bellow.
 
 ```bash
 # Deploy to Google Cloud Bucket configured on Makefile
@@ -76,12 +76,13 @@ make deploy
 
 # :warning: To do
 
-- Isolate draw methods into gameScreen class.
+- Isolate draw methods into `gameScreen` class.
 - Minify bundle size.
 - Create flag to display FPS.
 - Enable full screen mode.
-- In TicTacToe, replace "X" and "O" sprites to native drawing methods.
+- In TicTacToe, replace `X` and `O` sprites to native drawing methods.
 - In TicTacToe, force AI to make mistakes so that the human can win sometimes.
 - Create more powerful writing methods in `gameScreen`.
 - Rework Breakout hitbox.
 - Add delay after death on Corona Invaders.
+- Add support for mobile.
