@@ -80,7 +80,7 @@ h1 {
 }
 
 h1::before {
-  content: 'Canvas Retro Games';
+  content: 'Canvas Retro Arcade';
   position: absolute;
   left: -3px;
   top: -3px;
