@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Retro Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script defer src="index.bundle.js"></script></head>
+  <body>
+    <main>
+      <h1>Canvas Retro Arcade</h1>
+
+      <menu>
+        <button
+          role="button"
+          onmousedown="changeGame('Breakout')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Breakout
+        </button>
+
+        <button
+          role="button"
+          onmousedown="changeGame('Corona Invaders')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Corona Invaders
+        </button>
+
+        <button
+          role="button"
+          onmousedown="changeGame('Snake')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Snake
+        </button>
+
+        <button
+          role="button"
+          onmousedown="changeGame('TicTacToe')"
+          onkeyup="event.preventDefault()"
+          onkeydown="event.preventDefault()"
+        >
+          Tic-tac-toe
+        </button>
+      </menu>
+
+      <section>
+        <h2>Breakout</h2>
+        <canvas> </canvas>
+      </section>
+    </main>
+  </body>
+</html>
