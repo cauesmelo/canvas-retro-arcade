@@ -6,7 +6,7 @@ Basically a (very) small collection of retro arcades made with HTML Canvas and J
 
 # :zap: Quickstart
 
-You can access [this link](https://storage.googleapis.com/canvas-retro-games/index.html) or clone this repository to run locally.
+You can access [this link](https://cauesmelo.github.io/canvas-retro-arcade/) or clone this repository to run locally.
 
 1. Clone the project
 
